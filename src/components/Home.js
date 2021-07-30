@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Portfolio from "./Portfolio";
-import background from "./assets/images/ocean-texture.jpeg";
+import background from "./assets/images/ocean-texture-dark.jpg";
 const Image = styled.img`
   object-fit: cover;
   height: 100%;
@@ -17,7 +17,6 @@ const Currently = styled.div`
   position: absolute;
   top: 35%;
   left: 20%;
-  background-color: rgba(200, 200, 200, 0);
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 10px;

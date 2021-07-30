@@ -6,7 +6,8 @@
 html {
   margin: 0;
   padding: 0;
-  background-color: rgb(238, 244, 255);
+  background-color: rgb(50, 57, 65);
+  color: rgb(215, 218, 220);
 }
 
 h1 {
@@ -27,4 +28,9 @@ a {
 }
 a:hover {
   color: rgba(225, 71, 54, 1);
+}
+
+.active {
+  color: rgba(225, 71, 54, 1);
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
 }
