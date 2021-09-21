@@ -26,6 +26,16 @@ const ProjectCard = ({ project }) => {
         })}
       </TagBar>
       <p>{project.description}</p>
+
+      <iframe
+        width="100%"
+        height="65%"
+        src={`https://www.youtube.com/embed/${project.youtube}`}
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
     </Card>
   );
 };

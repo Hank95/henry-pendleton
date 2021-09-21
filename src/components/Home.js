@@ -12,6 +12,7 @@ const Landing = styled.div`
   height: 100vh;
   position: relative;
   background-color: aliceblue;
+  margin-bottom: 25px;
 `;
 const Currently = styled.div`
   position: absolute;
@@ -32,15 +33,8 @@ const Home = () => {
           <h1>Henry</h1>
           <h1>Pendleton</h1>
           <h2>is currently ...</h2>
-          <h3>
-            Googling shit and trying to make cool{" "}
-            <a href="https://github.com/Hank95">
-              {" "}
-              <u>things</u>{" "}
-            </a>
-            .
-          </h3>
-          <h4>(Enrolled as a Sofware Engineer Student at Flatiron School.)</h4>
+          <h3>Looking to build cool things.</h3>
+          <h4>(Recent grad of the Flatiron Software Engineer Program)</h4>
         </Currently>
       </Landing>
       <Portfolio />
