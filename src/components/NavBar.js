@@ -77,10 +77,10 @@ const NavBar = () => {
             <Link to="/"> Home</Link>
           </GridItem>
           <GridItem>
-            <Link to="/blog"> Blog</Link>
+            <Link to="/resume"> Resume</Link>
           </GridItem>
           <GridItem>
-            <Link to="/resume"> Resume</Link>
+            <a href="https://hhpendleton.medium.com"> Blog</a>
           </GridItem>
         </Container>
       ) : (

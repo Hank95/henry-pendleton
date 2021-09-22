@@ -21,7 +21,7 @@ const Portfolio = () => {
   return (
     <Container>
       <List>
-        <Title>Projects</Title>
+        <Title>Projects:</Title>
         {orderedProjects.map((project) => {
           return (
             <ListItem
@@ -40,8 +40,9 @@ const Portfolio = () => {
 };
 
 const Container = styled.div`
+  z-index: 1000;
   width: 80%;
-  height: auto;
+  max-height: 800px;
   margin: auto;
   display: grid;
   grid-template-columns: 30% 70%;
@@ -49,7 +50,8 @@ const Container = styled.div`
   border-radius: 10px;
 `;
 const Title = styled.div`
-  font-size: 30px;
+  font-size: 40px;
+  font-weight: 900;
   text-align: center;
   padding-top: 20px;
   height: 10%;
@@ -61,6 +63,7 @@ const List = styled.div`
 `;
 const ListItem = styled.div`
   align-content: center;
+  cursor: pointer;
   text-align: center;
   padding-top: 40px;
   font-size: 30px;

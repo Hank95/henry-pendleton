@@ -10,7 +10,6 @@ const Footer = () => {
     <Content>
       <Info>
         <img src={logo} alt="HP" />
-        <div>Built by me!</div>
       </Info>
       <Social>
         <a href="https://www.linkedin.com/in/henry-pendleton-25255243/">
@@ -43,7 +42,7 @@ const Info = styled.div`
   display: flex;
   flex-direction: row;
   align-content: center;
-  /* justify-content: center; */
+  justify-content: baseline;
 `;
 const SocialImage = styled.img`
   cursor: pointer;

@@ -2,33 +2,15 @@ import React from "react";
 import styled from "styled-components";
 import Portfolio from "./Portfolio";
 import background from "./assets/images/ocean-texture-dark.jpg";
-const Image = styled.img`
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-`;
-const Landing = styled.div`
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  background-color: aliceblue;
-  margin-bottom: 25px;
-`;
-const Currently = styled.div`
-  position: absolute;
-  top: 35%;
-  left: 20%;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 0px;
-`;
+import Particles from "react-particles-js";
+import Hero from "./Hero";
+
 const Home = () => {
   return (
     <div>
       <Landing>
-        <Image src={background} alt="backgroud" />
+        {/* <Image src={background} alt="backgroud" /> */}
+        <Hero />
         <Currently>
           <h1>Henry</h1>
           <h1>Pendleton</h1>
@@ -41,5 +23,27 @@ const Home = () => {
     </div>
   );
 };
+
+const Image = styled.img`
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+`;
+const Landing = styled.div`
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  margin-bottom: 25px;
+`;
+const Currently = styled.div`
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 0px;
+`;
 
 export default Home;

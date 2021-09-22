@@ -12,16 +12,15 @@ html {
 
 h1 {
   font-family: "Cinzel", serif;
-  font-size: 5vw;
 }
 
-h2 {
+/* h2 {
   font-size: 3vw;
-  /* font-family: "Playfair Display", serif; */
 }
 h3 {
-  font-size: 2vw;
-}
+  font-size: 1.5rem;
+} */
+
 a {
   color: inherit;
   text-decoration: inherit;
