@@ -12,8 +12,8 @@ const Home = () => {
         {/* <Image src={background} alt="backgroud" /> */}
         <Hero />
         <Currently>
-          <h1>Henry</h1>
-          <h1>Pendleton</h1>
+          <Title>Henry</Title>
+          <Title>Pendleton</Title>
           <h2>is currently ...</h2>
           <h3>Looking to build cool things.</h3>
           <h4>(Recent grad of the Flatiron Software Engineer Program)</h4>
@@ -23,6 +23,10 @@ const Home = () => {
     </div>
   );
 };
+
+const Title = styled.h1`
+  font-size: 4rem;
+`;
 
 const Image = styled.img`
   object-fit: cover;
