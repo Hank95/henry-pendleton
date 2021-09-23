@@ -3,17 +3,6 @@ import Particles from "react-particles-js";
 const Hero = () => {
   return (
     <Particles
-      //   params={{
-      //     particles: {
-      //       line_linked: {
-      //         shadow: {
-      //           enable: true,
-      //           color: "#3CA9D1",
-      //           blur: 5,
-      //         },
-      //       },
-      //     },
-      //   }}
       params={{
         particles: {
           number: {
@@ -67,6 +56,9 @@ const Hero = () => {
       }}
       style={{
         width: "100%",
+        height: "100%",
+        zIndex: "-100",
+        position: "absolute",
       }}
     />
   );

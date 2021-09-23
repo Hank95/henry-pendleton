@@ -41,12 +41,15 @@ const Portfolio = () => {
 const Container = styled.div`
   z-index: 1000;
   width: 80%;
-  max-height: 800px;
+  /* max-height: 800px; */
   margin: auto;
   display: grid;
   grid-template-columns: 30% 70%;
   background-color: rgb(32, 33, 36);
   border-radius: 10px;
+  @media (max-width: 600px) {
+    display: block;
+  }
 `;
 const Title = styled.div`
   font-size: 40px;
@@ -72,6 +75,11 @@ const ListItem = styled.div`
   &:hover {
     color: rgba(225, 71, 54, 1);
     box-shadow: 0 0 15px 4px rgba(100, 100, 100, 0.06);
+  }
+  @media (max-width: 600px) {
+    height: 20px;
+    font-size: 15px;
+    padding-top: 5px;
   }
 `;
 

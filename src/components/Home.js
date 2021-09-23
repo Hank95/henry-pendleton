@@ -6,8 +6,8 @@ import Hero from "./Hero";
 const Home = () => {
   return (
     <div>
+      <Hero />
       <Landing>
-        <Hero />
         <Currently>
           <Title>Henry</Title>
           <Title>Pendleton</Title>
@@ -23,6 +23,9 @@ const Home = () => {
 
 const Title = styled.h1`
   font-size: 4rem;
+  @media (max-width: 425px) {
+    font-size: 2rem;
+  }
 `;
 const Landing = styled.div`
   width: 100%;
@@ -33,12 +36,14 @@ const Landing = styled.div`
 const Currently = styled.div`
   position: absolute;
   top: 35%;
-  left: 20%;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 0px;
+  left: 25%;
+  padding: 10px 20px;
+  @media (max-width: 750px) {
+    left: 100px;
+  }
+  @media (max-width: 550px) {
+    left: 20px;
+  }
 `;
 
 export default Home;

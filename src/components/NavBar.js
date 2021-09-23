@@ -3,40 +3,6 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import logo from "./assets/images/hp_logo2_white.svg";
 
-const Nav = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100px;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: flex-end;
-  z-index: 100;
-`;
-const Logo = styled.img`
-  margin: 7%;
-`;
-const Container = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin: 10%;
-`;
-const GridItem = styled.div`
-  height: 100px;
-  width: auto;
-  position: relative;
-  align-content: center;
-  text-align: center;
-  font-size: 30px;
-  margin-top: 20%;
-`;
-const Burger = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  margin: 10%;
-`;
-
 const NavBar = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => {
@@ -45,7 +11,9 @@ const NavBar = () => {
 
   return (
     <Nav>
-      <Logo src={logo} alt="logo" />
+      <div as="Link" to="/">
+        <Logo src={logo} alt="logo" />
+      </div>
 
       {click ? (
         <Container>
@@ -120,5 +88,55 @@ const NavBar = () => {
     </Nav>
   );
 };
+
+const Nav = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: flex-end;
+  z-index: 100;
+`;
+const Logo = styled.img`
+  margin: 7%;
+`;
+const Container = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
+  margin: 10%;
+  @media (max-width: 850px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-end;
+  }
+`;
+const GridItem = styled.div`
+  height: 100px;
+  width: auto;
+  cursor: pointer;
+  position: relative;
+  align-content: right;
+  text-align: center;
+  font-size: 30px;
+  /* margin-top: 20%; */
+  &:hover {
+    color: rgba(225, 71, 54, 1);
+  }
+  @media (max-width: 850px) {
+    height: 45px;
+    width: 100px;
+    margin-top: 20px;
+  }
+`;
+const Burger = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  margin: 10%;
+`;
 
 export default NavBar;

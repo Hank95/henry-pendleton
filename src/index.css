@@ -33,3 +33,10 @@ a:hover {
   color: rgba(225, 71, 54, 1);
   box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
 }
+
+#burger-menu {
+  cursor: pointer;
+}
+#burger-menu:hover {
+  color: rgba(225, 71, 54, 1);
+}

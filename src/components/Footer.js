@@ -52,6 +52,11 @@ const SocialImage = styled.img`
   &:hover {
     color: white;
   }
+  @media (max-width: 425px) {
+    height: 24px;
+    width: 24px;
+    margin: 5px;
+  }
 `;
 const Social = styled.div`
   display: flex;

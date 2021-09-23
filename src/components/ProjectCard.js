@@ -9,7 +9,8 @@ const TagBar = styled.div`
   margin-top: 15px;
   margin-bottom: 15px;
   @media (max-width: 850px) {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 `;
 const Tag = styled.p`
