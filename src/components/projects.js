@@ -29,7 +29,7 @@ export const data = {
       ],
       description:
         "The Bar Finder was my first app using Ruby to creat my own API.  The app is designed for users to search there local town to find bars and pubs with bar games that they want to play.  A user can add and delete bars to the site.  I used the LeafletJS API to add mapping funtionality so a user can browse based on location. ",
-      url: "github",
+      url: "https://github.com/Hank95/Phase-3-project-client",
       youtube: "kx4etfuPt_A",
     },
     {
@@ -38,7 +38,7 @@ export const data = {
       specs: ["React", "Rails", "User Auth", "PostgresQL", "E Commerce"],
       description:
         "The Laurel Bike Shop is a full stack ecommerce web app built with a React front end, a Ruby on Rails API and PostgresQL database.  The site has a session token based user authentication for users to create accounts, and save there shopping cart for a later purchase.  This site has full CRUD actions where user create, read, update, and delete there shopping cart.  For browsing, I implimanted pagination to allow for speedy rendering and a better user experience.",
-      url: "https://",
+      url: "https://github.com/Hank95/phase-4-project",
       youtube: "jva52zQTH5s",
     },
     {
@@ -54,7 +54,7 @@ export const data = {
       ],
       description:
         "AHOY was my Capstone project for the Flatiron School Software Engineer Program. It is a peer-to-peer boat rental application, built with a React frontend, a Rubby on Rails API, and a PostgresQL database.  I used AWS S3 for data storage and the Google Maps API for mapping and geocoding.  In this app users can log in to there account, browse and book, and review boats as well as post there own boats to the site.",
-      url: "http",
+      url: "https://github.com/Hank95/capstone-project",
       youtube: "RFWkbkm5nu4",
     },
   ],

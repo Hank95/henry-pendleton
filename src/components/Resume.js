@@ -14,7 +14,7 @@ const Resume = () => {
         src="https://drive.google.com/file/d/1avOsFeaAzafyXilG4MuK0kyuWsAMnVoz/preview"
         // width="640"
         // height="480"
-        // allow="autoplay"
+        allow="autoplay"
       ></PDF>
     </Container>
   );
