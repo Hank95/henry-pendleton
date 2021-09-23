@@ -16,7 +16,6 @@ const Portfolio = () => {
   };
 
   const orderedProjects = [].concat(data.projects).reverse();
-  console.log(orderedProjects, data.projects);
 
   return (
     <Container>
