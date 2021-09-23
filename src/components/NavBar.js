@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { NavLink, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from "./assets/images/hp_logo2_white.svg";
 
 const Nav = styled.div`
