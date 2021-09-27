@@ -11,9 +11,7 @@ const NavBar = () => {
 
   return (
     <Nav>
-      <div as="Link" to="/">
-        <Logo src={logo} alt="logo" />
-      </div>
+      <Logo src={logo} alt="logo" />
 
       {click ? (
         <Container>
@@ -42,13 +40,22 @@ const NavBar = () => {
             </svg>
           </GridItem>
           <GridItem>
-            <Link to="/"> Home</Link>
+            <Link to="/" onClick={handleClick}>
+              {" "}
+              Home
+            </Link>
           </GridItem>
           <GridItem>
-            <Link to="/resume"> Resume</Link>
+            <Link to="/resume" onClick={handleClick}>
+              {" "}
+              Resume
+            </Link>
           </GridItem>
           <GridItem>
-            <a href="https://hhpendleton.medium.com"> Blog</a>
+            <a href="https://hhpendleton.medium.com" onClick={handleClick}>
+              {" "}
+              Blog
+            </a>
           </GridItem>
         </Container>
       ) : (
