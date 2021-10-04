@@ -5,7 +5,7 @@ export const data = {
       title: "The Watch List",
       specs: ["Vanilla JavaScript", "HTML", "CSS", "REST API", "SPA"],
       description:
-        "This was the first project in my Flatiron Software Engineer Program.  'The Watch List' is a vanilla javascript sigle page application.  In the webpage we pull from a movie database where we can dynamically search and filter for movies.  Once you found a movie you would to watch you can save it to our JSON server backend.  On you watch list you have the ability to toggle if you have watched the movie and if so, you can rate the movie 1-10.",
+        "This was the first project in my Flatiron Software Engineer Program.  'The Watch List' is a vanilla javascript sigle page application.  In the webpage we pull from a movie database where we can dynamically search and filter for movies.  Once you found a movie you would to watch you can save it to our JSON server backend.  On your watch list you have the ability to toggle if you have watched the movie and if so, you can rate the movie 1-10.",
       url: "https://github.com/Hank95/Phase-1-Project",
     },
     {
