@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import pdf from "./assets/images/resume.pdf";
+import pdf from "./assets/images/henry_pendleton_resume.pdf";
 
 const Resume = () => {
   return (
